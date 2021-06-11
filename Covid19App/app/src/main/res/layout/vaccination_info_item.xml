@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="240dp"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<androidx.cardview.widget.CardView
+    app:cardElevation="20dp"
+
+    android:layout_width="match_parent"
+    android:layout_height="220dp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+ <androidx.constraintlayout.widget.ConstraintLayout
+     android:layout_width="match_parent"
+     android:background="#E6DCE1"
+     android:layout_height="match_parent">
+
+
+     <TextView
+         android:drawableLeft="@drawable/ic_baseline_local_hospital_24"
+         android:id="@+id/vaccine_center"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Vaccination Center"
+         android:layout_marginLeft="11dp"
+         android:layout_marginTop="7dp"
+         android:textSize="18sp"
+         android:fontFamily="sans-serif-black"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent"/>
+
+     <TextView
+         android:drawableLeft="@drawable/ic_baseline_location_on_24"
+         android:layout_marginLeft="11dp"
+         android:layout_marginTop="15dp"
+         android:id="@+id/vaccine_location"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Location"
+         android:textSize="16sp"
+         android:fontFamily="sans-serif-black"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toBottomOf="@id/vaccine_center"/>
+     <TextView
+         android:drawableLeft="@drawable/ic_baseline_access_time_24"
+         android:layout_marginLeft="11dp"
+         android:layout_marginTop="15dp"
+         android:id="@+id/vaccine_timings"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Vacination Timings"
+         android:textSize="16sp"
+         android:fontFamily="sans-serif-black"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toBottomOf="@id/vaccine_location"/>
+     <TextView
+         android:drawableLeft="@drawable/ic_baseline_auto_fix_high_24"
+         android:layout_marginLeft="11dp"
+         android:layout_marginTop="15dp"
+         android:id="@+id/vaccine_name"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Vaccine Name"
+         android:textSize="16sp"
+         android:fontFamily="sans-serif-black"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toBottomOf="@id/vaccine_timings"/>
+
+     <TextView
+         android:drawableLeft="@drawable/ic_baseline_monetization_on_24"
+         android:id="@+id/vaccine_charges"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Vaccine charges"
+         android:textSize="16sp"
+         android:fontFamily="sans-serif-black"
+         app:layout_constraintStart_toEndOf="@id/vaccine_name"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintTop_toTopOf="@id/vaccine_name"
+         app:layout_constraintBottom_toBottomOf="@id/vaccine_name"
+         />
+     <TextView
+         android:drawableLeft="@drawable/age"
+         android:layout_marginLeft="11dp"
+         android:layout_marginTop="15dp"
+         android:id="@+id/vaccine_age"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Age"
+         android:textSize="16sp"
+         android:paddingBottom="10dp"
+         android:fontFamily="sans-serif-black"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toBottomOf="@id/vaccine_name"/>
+     <TextView
+         android:drawableLeft="@drawable/ic_baseline_event_available_24"
+         android:id="@+id/vaccine_avaibility"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Avaibility"
+         android:textSize="16sp"
+         android:fontFamily="sans-serif-black"
+         app:layout_constraintStart_toStartOf="@id/vaccine_charges"
+
+         app:layout_constraintTop_toTopOf="@id/vaccine_age"
+         app:layout_constraintBottom_toBottomOf="@id/vaccine_age"
+         />
+ </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

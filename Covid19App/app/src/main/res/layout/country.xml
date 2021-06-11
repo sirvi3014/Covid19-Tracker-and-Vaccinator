@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<com.google.android.material.card.MaterialCardView
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+          android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/sno"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="091"
+            android:textColor="@color/black"
+            android:textSize="25sp"/>
+        <TextView
+
+android:maxLength="5"
+            android:id="@+id/countryName"
+            android:layout_marginLeft="11dp"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="India"
+            android:textColor="@color/black"
+            android:textSize="25sp"/>
+        <ImageView
+            android:id="@+id/countryImage"
+            android:layout_gravity="center"
+            android:layout_marginLeft="7dp"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:background="@color/black"/>
+        <TextView
+            android:maxLength="9"
+            android:id="@+id/countryCases"
+            android:layout_marginLeft="80dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3445357676"
+            android:textColor="@color/black"
+            android:textSize="23sp"/>
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

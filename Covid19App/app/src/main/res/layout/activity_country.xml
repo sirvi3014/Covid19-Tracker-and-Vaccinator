@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CountryActivity">
+<EditText
+    android:drawableLeft="@drawable/search"
+    android:id="@+id/searchET"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Search here"
+    android:imeOptions="actionSearch"
+    android:maxLines="1"/>
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:text="Country Name"
+        android:layout_marginLeft="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintBottom_toTopOf="@id/country_rcyclr"
+        app:layout_constraintTop_toBottomOf="@id/searchET"/>
+    <TextView
+        android:id="@+id/t2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:text="Total Cases"
+        android:layout_marginLeft="5dp"
+        app:layout_constraintBottom_toTopOf="@id/country_rcyclr"
+        android:layout_marginRight="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/searchET"/>
+    <androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/country_rcyclr"
+    android:layout_marginTop="20dp"
+    tools:listitem="@layout/country"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/t1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
